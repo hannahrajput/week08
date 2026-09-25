@@ -202,6 +202,8 @@ jobs:
           only-severities: critical,high
           exit-code: false
           summary: true
+        env:
+          DOCKER_SCOUT_HUB_TOKEN: ${{ secrets.DOCKER_SCOUT_TOKEN }}
 
       - name: Push Docker image with commit SHA
         run: |
