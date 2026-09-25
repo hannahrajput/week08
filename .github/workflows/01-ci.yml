@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - feature/continuous-deployment
   
   # Manual trigger for the workflow
   workflow_dispatch:
