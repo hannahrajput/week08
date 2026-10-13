@@ -200,7 +200,7 @@ jobs:
           command: cves
           image: ${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.image }}:${{ github.sha }}
           only-severities: critical,high
-          exit-code: false
+          exit-code: true
           summary: true
         env:
           DOCKER_SCOUT_HUB_USER: ${{ secrets.DOCKER_SCOUT_HUB_USER }}
